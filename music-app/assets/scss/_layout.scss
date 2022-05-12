@@ -122,20 +122,19 @@ svg{
     }
 }
 .fixed{
-    position: fixed !important;
+    position: fixed;
     animation: fix .2s forwards ;
-    z-index: 10;
-    color: black !important;
+    color: black;
     a{
-        color: black !important;
+        color: black;
     }
 header{
-    background-color: white !important;
+    background-color: white;
     .black-logo{
-        display: block !important;
+        display: block;
     }
     .white-logo{
-        display: none !important;
+        display: none;
     }
 }
     @keyframes fix {
@@ -147,20 +146,31 @@ header{
         }
     }
 }
-.desctop-header{
+.absolute{
     position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
     color: white;
+    a{
+        color: white;
+    }
     header{
-         z-index: 3;
         background-color: rgba(0, 0, 0, 0.31);
-        position: relative;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
         .black-logo{
             display: none;
         }
+        .white-logo{
+            display: block;
+        }
+    }
+}
+.desctop-header{
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 10;
+    header{
+         z-index: 3;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
         .menu{
             display: flex;
             align-items: center;
@@ -171,7 +181,6 @@ header{
                 text-transform: uppercase;
                 font-weight: 600;
                 text-decoration: none;
-                color: white;
                 }
                 list-style: none;
                 margin: 0px 10px;
@@ -181,7 +190,7 @@ header{
             display: flex;
             align-items: center;
             svg{
-                font-size: 19px;
+                font-size: 23px;
                 margin-left:12px;
                 cursor: pointer;
                 &:hover{
@@ -190,10 +199,7 @@ header{
                 z-index: 1;
                 transition: .4s ease-in-out;
                 &:first-child{
-                    font-size: 22px;
-                }
-                &:last-child{
-                    font-size: 22px;
+                    font-size: 19px;
                 }
             }
         }
@@ -220,9 +226,8 @@ header{
     .bottom-bar{
         width:100%;
         overflow-y: hidden;
-        // opacity: 0;
         transition: 1s;
-        height: 420px;
+        height: 340px;
         ul{
             list-style: none;
             padding: 20px 0;

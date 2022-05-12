@@ -1,8 +1,5 @@
 <template>
 <div>
-  <Head>
-    <title>Shuffle-Home</title>
-  </Head>
     <Loader v-if="loader"/>
     <Slider/>
     <latest-album/>
@@ -26,11 +23,11 @@ definePageMeta({
   })
   
 export default {
-  //  head () {
-  //   return {
-  //     title: 'Shuffle-Home',
-  //   }
-  // },
+   head () {
+    return {
+      title: 'Shuffle',
+    }
+  },
     components:{
      Slider,LatestAlbum,Loader,LatestNews,ImageList,ArtistBio
     },

@@ -7,8 +7,19 @@ export default defineNuxtConfig({
     // 'material-design-icons-iconfont/dist/material-design-icons.css',
     '@/assets/scss/style.scss',
     'swiper/css',
-    '@mdi/font/css/materialdesignicons.min.css'
+    '@mdi/font/css/materialdesignicons.min.css',
   ],
+  head: {
+    titleTemplate: '%s - Nuxt',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+
+      // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+      { hid: 'description', name: 'description', content: 'Meta description' }
+    ],
+    
+  },
   build:{
     transpile:['vuetify'],
   },

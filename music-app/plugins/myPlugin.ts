@@ -14,6 +14,7 @@ export default defineNuxtPlugin(NuxtApp=>{
         mdi,
       }
     },
+    
     defaults: {
       global: {
         ripple: false,

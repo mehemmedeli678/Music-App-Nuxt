@@ -27,7 +27,13 @@
             height: 90vh;
             }
         }
-
+       .blog{
+        .swiper-slide{
+            h1{
+                font-size: 50px;
+            }
+        }
+       }
     footer{
         ul{
             li{
@@ -45,6 +51,13 @@
     }
 }
 @media(min-width:600px){
+    .blog{
+        .swiper-slide{
+            h1{
+                font-size: 90px;
+            }
+        }
+       }
     .swiper-slide{
         .slide-inner--info{
             width: 50%;
@@ -81,6 +94,13 @@
     }
 }
 @media(min-width:1000px){
+    .blog{
+        .swiper-slide{
+            h1{
+                font-size: 120px;
+            }
+        }
+       }
     .swiper-slide{
         .slide-inner--info{
             width: 50%;

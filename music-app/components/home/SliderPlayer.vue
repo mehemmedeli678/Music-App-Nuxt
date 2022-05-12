@@ -71,14 +71,12 @@ InterVal(){
 },
 VolumeChange(e){
    var lp=document.querySelector('.lp')
-    var volume=document.querySelector('.volume')
     lp.volume=e.target.value/100
 },
  async Play(){
      var lp=document.querySelector('.lp')
      var volume=document.querySelector('.volume')
      let stop=document.querySelector('.stop')
-     var time=document.querySelector('.active')
      let play=document.querySelector('.play')
      play.style.display='none'
      stop.style.display='block'
